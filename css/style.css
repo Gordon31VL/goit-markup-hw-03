@@ -6,6 +6,16 @@ body {
     font-size: 16px;
     letter-spacing: 0.02em;
 }
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
@@ -13,7 +23,18 @@ a {
 
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
+.container { 
+    display: block;
+    max-width: 1440px; 
+    padding: 0;
+    margin: 0;
+}
+    
 
 .portfolio-text, .teams-text, .benefits-text {
     font-weight: bold;
@@ -58,26 +79,68 @@ ul, ol {
 .link:hover, .link:focus{
     color:#404BBF;
 }
+/* Header */
+.header{
+    display: flex;
+    border-bottom: 1px solid;
+    justify-content: space-between;
+}
+.navigation, .header-nav, .header-addresses{
+    display: flex;
+    padding: 12px;
+    align-items: center;
+}
+
+.navigation .logo{
+    margin-left: 156px;
+}
+
+.header-nav{
+    margin-left: 65px;
+}
+
+.header-addresses{
+    margin-right: 156px;
+}
+
+.address-nav{
+    display: flex;   
+}
+
+.header-nav, .address-nav{
+    gap: 40px;
+    
+}
 
 .header-addresses{
     font-style: normal;
 }
-.header-addresses>ul>li>a{
+
+.header-addresses a{
         color: #434455;
 }
+/* Hero image section */
 .hero-image{
     background: #2E2F42;
-    
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .hero-text{
+    width: 496px;
+    height: 120px;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 60px;
     text-align: center;
     color: #ffffff;
     letter-spacing: 0.02em;
 }
 .button{
+    height: 56px;
+    width: 169px;
     letter-spacing: 0.04em;
     color: #ffffff;
     background-color: #4D5AE5;
@@ -85,28 +148,122 @@ ul, ol {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
+    padding: 16 32;
+    border-radius: 4px;
+    margin-top: 48px;
 }
 
 .button:hover, .button:focus{
     background-color: #404BBF;
     cursor: pointer;
 }
-
+/* benefits section*/
+.benefits{
+    display: inline-flex;
+    margin: 150px 156px;
+    gap: 8px;
+}
+.benefits-list{
+    height: 104px;
+    width: 264px;
+}
+.benefits-description{
+    margin-top: 8px;
+}
+/* Team section */
 .teams {
     background-color: #F4F4FD;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    height: 732px;
+}
+
+.team-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.teams-text{
+    margin-top: 120px;
+    margin-bottom: 72px;
 }
 
 .team-list{
     background-color: #ffffff;
+    display: flex;
+    width: 264px;
+    height: 380px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 8%);
+    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 16%);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 8%);
+    padding-bottom: 32px;
 }
 
+.person-name{
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.specialization{
+    margin-bottom: 32px;
+}
+
+/* Portfolio section */
+.portfolio{
+    margin: 120px 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio-text{
+    padding-bottom: 72px;
+}
+.portfolio-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.portfolio-list{
+    width: 360px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.example-hgroup{
+    border: 1px solid #E7E9FC;
+    border-top: none; 
+    padding-bottom: 32px;
+}
+.example {
+    margin: 32px 0px 8px 16px;
+}
+.example-description{
+    margin: 0px 0px 8px 16px;
+}
+/* Footer section */
 .footer {
     background-color: #2E2F42;
+    height: 312px;
+    padding-top: 100px;
+    padding-left: 156px;
 }
-.footer>.logo>.studio{
+.footer .studio{
     color:#f4f4fd;
 }
-
 .footer-p{
+    margin-top: 16px;
+    height: 112px;
+    width: 264px;
     color: #F4F4FD;
 }
