@@ -89,12 +89,16 @@ ul, ol {
 }
 .navigation, .header-nav, .header-addresses{
     display: flex;
-    padding: 24px;
+    padding: 24px 0px;
     align-items: center;
 }
 
-.header-nav, .logo{
+.header-nav{
     margin-left: 76px;
+}
+
+.logo{
+    margin-right: 76px;
 }
 
 .address-nav{
@@ -161,14 +165,15 @@ ul, ol {
     padding: 120px 0;
 }
 .benefits-text{
-    overflow: hidden;
+    display: none;
+    margin-bottom: 8px;
 }
 .benefits-ul{
     display: flex;
-    width: calc((100% - 72px) / 4);
     gap: 24px;
 }
 .benefits-list{
+    width: calc((100% - 72px) / 4);
     margin-bottom: 8px;
 }
 
