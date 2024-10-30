@@ -31,7 +31,7 @@ ul, ol {
 .container {
     display: flex; 
     width: 1158px;
-    margin: auto;
+    margin: 0px auto;
     padding: 0px 15px;
 }
     
@@ -80,7 +80,7 @@ ul, ol {
     color:#404BBF;
 }
 /* Header */
-.header{
+.header .container{
     display: flex;
     border-bottom: 1px solid #e7e9fc;
     justify-content: space-between;
@@ -91,16 +91,8 @@ ul, ol {
     align-items: center;
 }
 
-.navigation .logo{
-    margin-left: 156px;
-}
-
 .header-nav{
-    margin-left: 65px;
-}
-
-.header-addresses{
-    margin-right: 156px;
+    margin-left: 76px;
 }
 
 .address-nav{
@@ -120,7 +112,7 @@ ul, ol {
         color: #434455;
 }
 /* Hero image section */
-.hero-image{
+.hero-image .container{
     background: #2E2F42;
     height: 600px;
     display: flex;
@@ -158,7 +150,7 @@ ul, ol {
     cursor: pointer;
 }
 /* benefits section*/
-.benefits{
+.benefits-ul{
     display: inline-flex;
     margin: 150px 156px;
     gap: 8px;
@@ -171,7 +163,7 @@ ul, ol {
     margin-top: 8px;
 }
 /* Team section */
-.teams {
+.teams .container {
     background-color: #F4F4FD;
     display: flex;
     justify-items: center;
@@ -216,7 +208,7 @@ ul, ol {
 }
 
 /* Portfolio section */
-.portfolio{
+.portfolio .container{
     margin: 120px 156px;
     display: flex;
     justify-content: center;
@@ -252,7 +244,7 @@ ul, ol {
     margin: 0px 0px 8px 16px;
 }
 /* Footer section */
-.footer {
+.footer .container{
     background-color: #2E2F42;
     height: 312px;
     padding-top: 100px;
