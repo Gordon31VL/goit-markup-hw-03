@@ -29,7 +29,6 @@ ul, ol {
 }
 
 .container {
-    display: flex;
     width: 1158px;
     margin: 0px auto;
     padding: 0px 15px;
@@ -84,11 +83,15 @@ ul, ol {
     border-bottom: 1px solid #e7e9fc;
 }
 .header .container{
+    display: flex;
     justify-content: space-between;
 }
 
 .header-nav{
     display: flex;
+}
+
+.nav-list{
     padding: 24px 0px;
 }
 .navigation, .header-addresses{
@@ -98,7 +101,6 @@ ul, ol {
 
 .logo{
     margin-right: 76px;
-    display: inline-block;
 }
 
 .address-nav{
@@ -284,10 +286,8 @@ ul, ol {
     padding: 100px 0;
     background-color: #2E2F42;
 }
-.footer .container{
-    flex-direction: column;
-}
 .footer .logo{
+    display: inline-block;
     margin-bottom: 16px;
 }
 .footer .studio{
