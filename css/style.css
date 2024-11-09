@@ -239,6 +239,9 @@ ul, ol {
     margin-bottom: 8px;
     text-align: center;
 }
+.specialization{
+    text-align: center;
+}
 
 /* Portfolio section */
 .portfolio{
@@ -280,9 +283,10 @@ ul, ol {
 /* Footer section */
 .footer {
     padding: 100px 0;
-}
-.footer{
     background-color: #2E2F42;
+}
+.footer .container{
+    flex-direction: column;
 }
 .footer .logo{
     display: inline-block;
