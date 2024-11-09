@@ -89,8 +89,6 @@ ul, ol {
 
 .header-nav{
     display: flex;
-}
-.header-nav-li {
     padding: 24px 0px;
 }
 .navigation, .header-addresses{
@@ -100,6 +98,7 @@ ul, ol {
 
 .logo{
     margin-right: 76px;
+    display: inline-block;
 }
 
 .address-nav{
@@ -289,7 +288,6 @@ ul, ol {
     flex-direction: column;
 }
 .footer .logo{
-    display: inline-block;
     margin-bottom: 16px;
 }
 .footer .studio{
