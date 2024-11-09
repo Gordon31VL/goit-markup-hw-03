@@ -29,7 +29,7 @@ ul, ol {
 }
 
 .container {
-    display: flex; 
+    display: flex;
     width: 1158px;
     margin: 0px auto;
     padding: 0px 15px;
@@ -84,17 +84,16 @@ ul, ol {
     border-bottom: 1px solid #e7e9fc;
 }
 .header .container{
-    display: flex;
     justify-content: space-between;
 }
-.navigation, .header-nav, .header-addresses{
-    display: flex;
-    padding: 24px 0px;
-    align-items: center;
-}
 
-.header-nav{
-    margin-left: 76px;
+.header-nav, .header-addresses{
+    padding: 24px 0px;
+    display: flex;
+}
+.navigation{
+    display: flex;
+    align-items: center;
 }
 
 .logo{
@@ -102,12 +101,11 @@ ul, ol {
 }
 
 .address-nav{
-    display: flex;   
+    display: flex; 
 }
 
 .header-nav, .address-nav{
     gap: 40px;
-    
 }
 
 .header-addresses{
@@ -121,13 +119,17 @@ ul, ol {
 .hero-image {
     padding: 188px 0;
 }
+
 .hero-image .container{
-    background: #2E2F42;
-    height: 600px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    
+}
+.hero-image{
+    height: 600px;
+    background: #2E2F42;
 }
 
 .hero-text{
@@ -177,11 +179,24 @@ ul, ol {
     margin-bottom: 8px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* Team section */
 .teams{
     padding: 120px 0;
 }
-.teams .container {
+.teams {
     background-color: #F4F4FD;
 
     display: flex;
@@ -227,7 +242,7 @@ ul, ol {
 }
 
 /* Portfolio section */
-.portfolio .container{
+.portfolio{
     margin: 120px 156px;
     display: flex;
     justify-content: center;
@@ -263,7 +278,10 @@ ul, ol {
     margin: 0px 0px 8px 16px;
 }
 /* Footer section */
-.footer .container{
+.footer {
+    padding: 100px 0;
+}
+.footer{
     background-color: #2E2F42;
     height: 312px;
     padding-top: 100px;
@@ -273,8 +291,6 @@ ul, ol {
     color:#f4f4fd;
 }
 .footer-p{
-    margin-top: 16px;
-    height: 112px;
-    width: 264px;
+    max-width: 264px;
     color: #F4F4FD;
 }
