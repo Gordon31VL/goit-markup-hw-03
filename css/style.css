@@ -87,13 +87,14 @@ ul, ol {
     justify-content: space-between;
 }
 
-.header-nav{
+.header-nav, .address-nav{
     display: flex;
 }
-
-.nav-list{
+.header-nav .link{
+    display: block;
     padding: 24px 0px;
 }
+
 .navigation, .header-addresses{
     display: flex;
     align-items: center;
@@ -101,10 +102,6 @@ ul, ol {
 
 .logo{
     margin-right: 76px;
-}
-
-.address-nav{
-    display: flex; 
 }
 
 .header-nav, .address-nav{
